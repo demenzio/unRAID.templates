@@ -16,7 +16,7 @@
       [b]/Library Path[/b] Path to your calibre library metadata.db file[br]</Overview>
       <Category/>
       <WebUI>http://[IP]:[PORT:8080]</WebUI>
-      <TemplateURL/>
+      <TemplateURL>https://github.com/demenzio/unRAID.templates/blob/master/Caliver.xml</TemplateURL>
       <Icon>https://calibre-ebook.com/favicon.png</Icon>
       <ExtraParams/>
       <PostArgs/>
