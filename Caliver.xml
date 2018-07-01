@@ -1,0 +1,59 @@
+    <?xml version="1.0"?>
+    <Container version="1">
+      <Name>Caliver</Name>
+      <Repository>xuvin/caliver</Repository>
+      <Registry>https://hub.docker.com/r/xuvin/caliver/</Registry>
+      <Network>bridge</Network>
+      <MyIP/>
+      <Privileged>false</Privileged>
+      <Support/>
+      <Project/>
+      <Overview>Caliver is a Docker container providing the newest Calibre version (currently 3.26.1) for browsing, reading and downloading eBooks using one of your existing Calibre database.
+
+      [br][br]
+      [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br];
+      [b]/Config[/b] Where Calibre-web should store it's config files[br];
+      [b]/Library Path[/b] Path to your calibre library metadata.db file[br]</Overview>
+      <Category/>
+      <WebUI>http://[IP]:[PORT:8080]</WebUI>
+      <TemplateURL/>
+      <Icon>https://calibre-ebook.com/favicon.png</Icon>
+      <ExtraParams/>
+      <PostArgs/>
+      <DateInstalled>1530402943</DateInstalled>
+      <DonateText/>
+      <DonateLink/>
+      <Description>Caliver is a Docker container providing the newest Calibre version (currently 3.26.1) for browsing, reading and downloading eBooks using one of your existing Calibre database.&#xD;
+    &#xD;
+      [br][br]&#xD;
+      [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+      [b]/Config[/b] Where Calibre-web should store it's config files[br]&#xD;
+      [b]/Library Path[/b] Path to your calibre library metadata.db file[br]</Description>
+      <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+          <Port>
+            <HostPort>8080</HostPort>
+            <ContainerPort>8080</ContainerPort>
+            <Protocol>tcp</Protocol>
+          </Port>
+        </Publish>
+      </Networking>
+      <Data>
+        <Volume>
+          <HostDir>/mnt/user/appdata/caliver/config</HostDir>
+          <ContainerDir>/opt/config</ContainerDir>
+          <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+          <HostDir>/mnt/user/appdata/caliver/lib/books</HostDir>
+          <ContainerDir>/opt/lib/Books</ContainerDir>
+          <Mode>rw</Mode>
+        </Volume>
+      </Data>
+      <Environment/>
+      <Labels/>
+      <Config Name="Config" Target="/opt/config" Default="" Mode="rw" Description="Container Path: /opt/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/caliver/config</Config>
+      <Config Name="Library Path" Target="/opt/lib/Books" Default="" Mode="rw" Description="Container Path: /opt/lib/Books" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/caliver/lib/books</Config>
+      <Config Name="Exposed Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+    </Container>
