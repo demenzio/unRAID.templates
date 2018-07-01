@@ -14,7 +14,7 @@
       [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br];
       [b]/Config[/b] Where Calibre-web should store it's config files[br];
       [b]/Library Path[/b] Path to your calibre library metadata.db file[br]</Overview>
-      <Category/>
+      <Category>MediaServer:Books</Category>
       <WebUI>http://[IP]:[PORT:8080]</WebUI>
       <TemplateURL>https://github.com/demenzio/unRAID.templates/blob/master/Caliver.xml</TemplateURL>
       <Icon>https://calibre-ebook.com/favicon.png</Icon>
